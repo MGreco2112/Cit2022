@@ -21,34 +21,36 @@ public class Main {
 //        System.out.println(wagon);
 //        System.out.println(honda);
 //        System.out.println(innova);
+//
+//        List<String> products = new ArrayList<>();
+//        List<Float> productPrices = new ArrayList<>();
+//
+//        products.add("eggs");
+//        products.add("milk");
+//        products.add("cheese");
+//
+//        productPrices.add(2.89f);
+//        productPrices.add(2.99f);
+//        productPrices.add(5.79f);
+//
+//        List<String> productsSold = new ArrayList<>();
+//        List<Float> soldPrices = new ArrayList<>();
+//
+//        productsSold.add("eggs");
+//        productsSold.add("eggs");
+//        productsSold.add("milk");
+//        productsSold.add("milk");
+//        productsSold.add("cheese");
+//
+//        soldPrices.add(2.89f);
+//        soldPrices.add(2.99f);
+//        soldPrices.add(2.99f);
+//        soldPrices.add(5.00f);
+//        soldPrices.add(0.99f);
+//
+//        System.out.println(PriceCheck.priceCheck(products, productPrices, productsSold, soldPrices));
 
-        List<String> products = new ArrayList<>();
-        List<Float> productPrices = new ArrayList<>();
-
-        products.add("eggs");
-        products.add("milk");
-        products.add("cheese");
-
-        productPrices.add(2.89f);
-        productPrices.add(2.99f);
-        productPrices.add(5.79f);
-
-        List<String> productsSold = new ArrayList<>();
-        List<Float> soldPrices = new ArrayList<>();
-
-        productsSold.add("eggs");
-        productsSold.add("eggs");
-        productsSold.add("milk");
-        productsSold.add("milk");
-        productsSold.add("cheese");
-
-        soldPrices.add(2.89f);
-        soldPrices.add(2.99f);
-        soldPrices.add(2.99f);
-        soldPrices.add(5.00f);
-        soldPrices.add(0.99f);
-
-        System.out.println(PriceCheck.priceCheck(products, productPrices, productsSold, soldPrices));
+        System.out.println(CountingClosedPaths.closedPaths(468901));
 
     }
 }
