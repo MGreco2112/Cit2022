@@ -1,5 +1,7 @@
 package com.company;
 
+import com.company.binarysearchtree.BSTreeNode;
+import com.company.binarysearchtree.BinaryTreeSearch;
 import com.company.car.Car;
 import com.company.car.HondaCity;
 import com.company.car.InnovaCrysta;
@@ -50,7 +52,35 @@ public class Main {
 //
 //        System.out.println(PriceCheck.priceCheck(products, productPrices, productsSold, soldPrices));
 
-        System.out.println(CountingClosedPaths.closedPaths(468901));
+//        System.out.println(CountingClosedPaths.closedPaths(468901));
+
+        /*
+                    25
+                    /\
+                  12  30
+                 / \    \
+               10  15    50
+         */
+
+        BSTreeNode nodeOne = new BSTreeNode(25, null);
+        BSTreeNode nodeTwo = new BSTreeNode(12, nodeOne);
+        BSTreeNode nodeThree = new BSTreeNode(30, nodeOne);
+        BSTreeNode nodeFour = new BSTreeNode(10, nodeTwo);
+        BSTreeNode nodeFive = new BSTreeNode(15, nodeTwo);
+        BSTreeNode nodeSix = new BSTreeNode(50, nodeThree);
+
+        BSTreeNode.setNode(nodeOne, nodeTwo, nodeThree);
+        BSTreeNode.setNode(nodeTwo, nodeFour, nodeFive);
+        BSTreeNode.setNode(nodeThree, nodeSix, null);
+
+        List<Integer> testArray = new ArrayList<>();
+
+        testArray.add(20);
+        testArray.add(30);
+        testArray.add(14);
+        testArray.add(12);
+
+        System.out.println(BinaryTreeSearch.isPresent(nodeOne, testArray));
 
     }
 }
